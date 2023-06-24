@@ -11,7 +11,9 @@ const cors = require("cors");
 
 // 連結MongoDB
 mongoose
-  .connect(process.env.MONGODB_CONNECTION)
+  .connect(
+    "+srv://mongodbE84111201:Elb4n9bPXRuox8Gi@cluster0.u0twk98.mongodb.net/?retryWrites=true&w=majority"
+  )
   .then(() => {
     console.log("Connecting to mongodb...");
   })
