@@ -1,6 +1,7 @@
 //註冊、登入、登出都在這裡
 import axios from "axios";
-const API_URL = "https://mern-project-a4li.onrender.com";
+const API_URL =
+  "https://6496df32e3d5795752f94a85--eloquent-crumble-a1885e.netlify.app/api/user";
 class AuthService {
   login(email, password) {
     return axios.post(API_URL + "/login", { email, password });

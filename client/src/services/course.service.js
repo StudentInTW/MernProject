@@ -1,5 +1,6 @@
 import axios from "axios";
-const API_URL = "https://mern-project-a4li.onrender.com";
+const API_URL =
+  "https://6496df32e3d5795752f94a85--eloquent-crumble-a1885e.netlify.app/api/courses";
 
 class CourseService {
   post(title, description, price) {
