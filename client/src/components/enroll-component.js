@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import CourseService from "../services/course.service";
 
@@ -74,14 +74,13 @@ const EnrollComponent = ({ currentUser, setCurrentUser }) => {
                 <p className="card-text">{course.description}</p>
                 <p>價格: {course.price}</p>
                 <p>目前的學生人數: {course.students.length}</p>
-                <a
-                  href="#"
-                  onClick={handleEnroll}
-                  className="card-text btn btn-primary"
-                  id={course._id}
+                <button
+                  onClick={() => handleEnroll(course._id)}
+                  className="btn btn-primary"
+                  style={{ textDecoration: "underline" }}
                 >
                   註冊課程
-                </a>
+                </button>
               </div>
             </div>
           ))}

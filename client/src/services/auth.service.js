@@ -22,5 +22,5 @@ class AuthService {
     return JSON.parse(localStorage.getItem("user"));
   }
 }
-
-export default new AuthService();
+const authService = new AuthService();
+export default authService;

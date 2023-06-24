@@ -10,6 +10,7 @@ const CourseComponent = ({ currentUser, setCurrentUser }) => {
   const [courseData, setCourseData] = useState(null);
   useEffect(() => {
     let _id;
+
     if (currentUser) {
       _id = currentUser.user._id;
       if (currentUser.user.role === "instructor") {
@@ -31,7 +32,7 @@ const CourseComponent = ({ currentUser, setCurrentUser }) => {
           });
       }
     }
-  }, []);
+  }, [currentUser]);
 
   return (
     <div style={{ padding: "3rem" }}>
