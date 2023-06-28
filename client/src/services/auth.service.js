@@ -1,6 +1,6 @@
 //註冊、登入、登出都在這裡
 import axios from "axios";
-const API_URL = "https://mern-project-gvjg.onrender.com";
+const API_URL = "http://localhost:8080/api/user";
 class AuthService {
   login(email, password) {
     return axios.post(API_URL + "/login", { email, password });
@@ -22,5 +22,5 @@ class AuthService {
     return JSON.parse(localStorage.getItem("user"));
   }
 }
-const authService = new AuthService();
-export default authService;
+const authorization = new AuthService();
+export default authorization;

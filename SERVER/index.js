@@ -11,9 +11,7 @@ const cors = require("cors");
 
 // 連結MongoDB
 mongoose
-  .connect(
-    "mongodb+srv://E84111201:Elb4n9bPXRuox8Gi@cluster0.u0twk98.mongodb.net/?retryWrites=true&w=majority"
-  )
+  .connect("mongodb://127.0.0.1/mernDB")
   .then(() => {
     console.log("Connecting to mongodb...");
   })

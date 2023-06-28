@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "https://mern-project-gvjg.onrender.com";
+const API_URL = "http://localhost:8080/api/courses";
 
 class CourseService {
   post(title, description, price) {
@@ -87,4 +87,5 @@ class CourseService {
   }
 }
 const courseService = new CourseService();
+
 export default courseService;
