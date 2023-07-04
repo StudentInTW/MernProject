@@ -24,8 +24,8 @@ const EnrollComponent = ({ currentUser, setCurrentUser }) => {
       });
   };
 
-  const handleEnroll = (e) => {
-    CourseService.enroll(e.target.id)
+  const handleEnroll = (id) => {
+    CourseService.enroll(id)
       .then(() => {
         window.alert("課程註冊成功!! 重新導向到課程頁面。");
         navigate("/course");
@@ -90,7 +90,7 @@ const EnrollComponent = ({ currentUser, setCurrentUser }) => {
 
                   <button
                     onClick={() => handleEnroll(course._id)}
-                    className="btn btn-primary"
+                    className="card-text btn btn-primary"
                     style={{ textDecoration: "underline" }}
                   >
                     註冊課程
