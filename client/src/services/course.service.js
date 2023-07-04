@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "https://backend-urwc.onrender.com/api/courses";
+const API_URL = "https://backend-6cca.onrender.com/api/courses";
 
 class CourseService {
   post(title, description, price) {
